@@ -15,7 +15,7 @@
 		'a.visitWebsiteButton',					// the floating one for card view
 		'.entry.selected a.title'				// title bar for active entry in React-based collapsed list view
     ];
-	
+
 	/**
 	 * Main feedlybackgroundtab constructor
 	 */
@@ -57,7 +57,7 @@
                         }
                     }
 					if (url) {
-						chrome.extension.sendMessage({url: url.href});
+						chrome.runtime.sendMessage({url: url.href});
 					}
                     else {
                         console.log("Could not find any selectors from: " + selectors.join());

@@ -11,7 +11,7 @@
  *
  * This will open up a new non-focused tab with the url it was sent
  */
-chrome.extension.onMessage.addListener(
+chrome.runtime.onMessage.addListener(
 	function(messageObject) {
 		chrome.tabs.create({
 			url: messageObject.url,
