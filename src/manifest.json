@@ -6,7 +6,8 @@
 	"content_scripts": [
 		{
 			"matches": [
-				"*://*.feedly.com/*"
+				"*://*.feedly.com/*",
+				"*://feed.jkte.ch/*"
 			],
 			"js": [
 				"js/keypress.js"
@@ -23,7 +24,8 @@
 	"host_permissions": [
 		"http://www.feedly.com/*",
 		"http://cloud.feedly.com/*",
-		"https://cloud.feedly.com/*"
+		"https://cloud.feedly.com/*",
+		"https://feed.jkte.ch/*"
 	],
 	"minimum_chrome_version": "95",
 	"icons": {

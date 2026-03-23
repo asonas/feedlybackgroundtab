@@ -13,7 +13,8 @@
 		'.selectedEntry a.visitWebsiteButton',	// the button square button on list view
 		'.list-entries .selected a.visitWebsiteButton',	// the button square button on list view
 		'a.visitWebsiteButton',					// the floating one for card view
-		'.entry.selected a.title'				// title bar for active entry in React-based collapsed list view
+		'.entry.selected a.title',				// title bar for active entry in React-based collapsed list view
+		'[aria-selected="true"] a.article-card'	// Oksskolten (feed.jkte.ch) selected article
     ];
 
 	/**
